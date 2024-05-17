@@ -1,1 +1,44 @@
-./package.json
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "build-submodule": "npm run build && cp -r ./* ../landing-page",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview -l info"
+  },
+  "dependencies": {
+    "@emotion/react": "stable",
+    "@nextui-org/react": "stable",
+    "@tanstack/react-query": "stable",
+    "@vitejs/plugin-react": "stable",
+    "clsx": "stable",
+    "flask-cors": "stable",
+    "framer-motion": "stable",
+    "lucide-react": "stable",
+    "papaparse": "stable",
+    "react": "stable",
+    "react-data-table-component": "stable",
+    "react-dom": "stable",
+    "react-dropzone": "stable",
+    "react-icons": "stable",
+    "react-router-dom": "stable",
+    "tailwind-merge": "stable",
+    "vite": "stable",
+    "@types/papaparse": "stable",
+    "@types/react": "stable",
+    "@types/react-dom": "stable",
+    "@typescript-eslint/eslint-plugin": "stable",
+    "@typescript-eslint/parser": "stable",
+    "autoprefixer": "stable",
+    "eslint": "stable",
+    "eslint-plugin-react-hooks": "stable",
+    "eslint-plugin-react-refresh": "stable",
+    "postcss": "stable",
+    "tailwindcss": "stable",
+    "typescript": "stable"
+  }
+}
